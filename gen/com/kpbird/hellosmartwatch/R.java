@@ -57,39 +57,44 @@ public final class R {
     }
     public static final class drawable {
         public static final int badge_counter=0x7f020000;
-        public static final int headset_pro_cancel_icn=0x7f020001;
-        public static final int headset_pro_focus_xs_icn=0x7f020002;
-        public static final int headset_pro_ok_icn=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int ic_launcher_18=0x7f020005;
-        public static final int ic_launcher_18_bw=0x7f020006;
-        public static final int ic_launcher_30=0x7f020007;
-        public static final int ic_launcher_48=0x7f020008;
-        public static final int text_bg=0x7f020009;
-        public static final int widget_frame=0x7f02000a;
+        public static final int dancing_android_0=0x7f020001;
+        public static final int dancing_android_1=0x7f020002;
+        public static final int headset_pro_cancel_icn=0x7f020003;
+        public static final int headset_pro_focus_xs_icn=0x7f020004;
+        public static final int headset_pro_ok_icn=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int ic_launcher_18=0x7f020007;
+        public static final int ic_launcher_18_bw=0x7f020008;
+        public static final int ic_launcher_30=0x7f020009;
+        public static final int ic_launcher_48=0x7f02000a;
+        public static final int text_bg=0x7f02000b;
+        public static final int widget_frame=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000f;
+        public static final int action_settings=0x7f090011;
         public static final int btnClearn=0x7f090004;
         public static final int btnSend=0x7f090003;
         public static final int etMessage=0x7f090002;
         public static final int etTitle=0x7f090001;
-        public static final int smart_watch_notification_widget_background=0x7f090005;
-        public static final int smart_watch_notification_widget_text_background=0x7f090006;
-        public static final int smart_watch_notification_widget_text_name=0x7f090009;
-        public static final int smart_watch_notification_widget_text_time=0x7f090007;
-        public static final int smart_watch_notification_widget_text_title=0x7f090008;
-        public static final int smart_watch_widget_custom_image=0x7f09000a;
-        public static final int smart_watch_widget_custom_text_view=0x7f09000b;
-        public static final int smart_watch_widget_event_counter_badge=0x7f09000d;
-        public static final int smart_watch_widget_event_counter_text=0x7f09000e;
-        public static final int smart_watch_widget_icon=0x7f09000c;
+        public static final int imgHelloControl=0x7f090005;
+        public static final int smart_watch_notification_widget_background=0x7f090007;
+        public static final int smart_watch_notification_widget_text_background=0x7f090008;
+        public static final int smart_watch_notification_widget_text_name=0x7f09000b;
+        public static final int smart_watch_notification_widget_text_time=0x7f090009;
+        public static final int smart_watch_notification_widget_text_title=0x7f09000a;
+        public static final int smart_watch_widget_custom_image=0x7f09000c;
+        public static final int smart_watch_widget_custom_text_view=0x7f09000d;
+        public static final int smart_watch_widget_event_counter_badge=0x7f09000f;
+        public static final int smart_watch_widget_event_counter_text=0x7f090010;
+        public static final int smart_watch_widget_icon=0x7f09000e;
         public static final int textView1=0x7f090000;
+        public static final int tvHelloControl=0x7f090006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int smart_watch_notification_widget=0x7f030001;
-        public static final int smart_watch_widget=0x7f030002;
+        public static final int hello_control_2=0x7f030001;
+        public static final int smart_watch_notification_widget=0x7f030002;
+        public static final int smart_watch_widget=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;

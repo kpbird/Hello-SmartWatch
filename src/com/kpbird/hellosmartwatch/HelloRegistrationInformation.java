@@ -30,7 +30,7 @@ public class HelloRegistrationInformation extends RegistrationInformation{
 
 	@Override
 	public int getRequiredControlApiVersion() {
-		return 0;
+		return 2;
 	}
 
 	@Override
@@ -92,5 +92,15 @@ public class HelloRegistrationInformation extends RegistrationInformation{
         bulkValues.add(sourceValues);
         return bulkValues.toArray(new ContentValues[bulkValues.size()]);
 	}
+	
+	@Override
+    public boolean isDisplaySizeSupported(int width, int height) {
+        return ((width == HelloControlSmartWatch2.getSupportedControlWidth(mContext)
+                && height == HelloControlSmartWatch2
+                        .getSupportedControlHeight(mContext) || width == HelloControlSmartWatch2
+                .getSupportedControlWidth(mContext) && height == HelloControlSmartWatch2
+                .getSupportedControlHeight(mContext)) );
+    }
+
 
 }

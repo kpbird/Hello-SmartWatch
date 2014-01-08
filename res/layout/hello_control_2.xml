@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="@dimen/smart_watch_2_control_width"
+    android:layout_height="@dimen/smart_watch_2_control_height"
+    >
+
+    <ImageView
+        android:id="@+id/imgHelloControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:clickable="true"
+        android:src="@drawable/dancing_android_0" />
+
+    <TextView
+        android:id="@+id/tvHelloControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Click On Dancing Android"
+        android:textSize="@dimen/smart_watch_2_text_size_small"  />
+
+  
+
+</RelativeLayout>

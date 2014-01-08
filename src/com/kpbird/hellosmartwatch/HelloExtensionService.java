@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
+import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -11,8 +12,12 @@ import com.sonyericsson.extras.liveware.aef.notification.Notification;
 import com.sonyericsson.extras.liveware.aef.registration.Registration;
 import com.sonyericsson.extras.liveware.extension.util.ExtensionService;
 import com.sonyericsson.extras.liveware.extension.util.ExtensionUtils;
+import com.sonyericsson.extras.liveware.extension.util.control.ControlExtension;
 import com.sonyericsson.extras.liveware.extension.util.notification.NotificationUtil;
+import com.sonyericsson.extras.liveware.extension.util.registration.DeviceInfo;
 import com.sonyericsson.extras.liveware.extension.util.registration.DeviceInfoHelper;
+import com.sonyericsson.extras.liveware.extension.util.registration.DisplayInfo;
+import com.sonyericsson.extras.liveware.extension.util.registration.RegistrationAdapter;
 import com.sonyericsson.extras.liveware.extension.util.registration.RegistrationInformation;
 
 
@@ -143,5 +148,16 @@ public class HelloExtensionService extends ExtensionService   {
 		 Log.d(TAG, "onRegisterResult :" + success);
 	}
 
+	  @Override
+	    public ControlExtension createControlExtension(String hostAppPackageName) {
+	        // First we check if the API level and screen size required for
+	        // SampleControlSmartWatch2 is supported
+	        boolean advancedFeaturesSupported = DeviceInfoHelper.isSmartWatch2ApiAndScreenDetected(this, hostAppPackageName);
+	        if (advancedFeaturesSupported) {
+	            return new HelloControlSmartWatch2(this,hostAppPackageName, new Handler());
+	        } else {
+	        	return null;
+	        }
+	    }
 
 }
